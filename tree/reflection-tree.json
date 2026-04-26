@@ -1,0 +1,35 @@
+{
+  "metadata": {
+    "title": "The Daily Reflection Tree",
+    "version": "1.0.0",
+    "frameworks": ["Rotter's Locus of Control", "OCB Theory", "Maslow's Transcendence"]
+  },
+  "nodes": [
+    { "id": "START", "type": "start", "text": "Welcome. Let's decode today's events into growth signals.", "next": "A1_Q1" },
+    { "id": "A1_Q1", "type": "question", "text": "Think of a moment today where things felt 'stuck'. What was your first thought?", "options": [
+        { "text": "I need to find a workaround.", "target": "A1_R_INT", "signal": "axis1:internal" },
+        { "text": "I'm waiting for clearance/help.", "target": "A1_R_EXT", "signal": "axis1:external" },
+        { "text": "This is a systemic failure beyond me.", "target": "A1_R_EXT", "signal": "axis1:external" }
+    ]},
+    { "id": "A1_R_INT", "type": "reflection", "text": "You're seeing the 'internal lever'. Even in friction, you maintain the driver's mindset.", "next": "BRIDGE1" },
+    { "id": "A1_R_EXT", "type": "reflection", "text": "Acknowledge the external constraints, but don't let them define your perimeter of action.", "next": "BRIDGE1" },
+    { "id": "BRIDGE1", "type": "bridge", "text": "Shifting focus: From your power to your presence in the team...", "next": "A2_Q1" },
+    { "id": "A2_Q1", "type": "question", "text": "Which of these captures your 'extra' effort today?", "options": [
+        { "text": "I cleaned up a process/mess I didn't create.", "target": "A2_R_CON", "signal": "axis2:contribution" },
+        { "text": "I focused on hitting my own high-quality targets.", "target": "A2_R_ENT", "signal": "axis2:entitlement" },
+        { "text": "I felt my time was wasted on others' incompetence.", "target": "A2_R_ENT", "signal": "axis2:entitlement" }
+    ]},
+    { "id": "A2_R_CON", "type": "reflection", "text": "That is Organizational Citizenship. You are investing in the ecosystem, not just your role.", "next": "BRIDGE2" },
+    { "id": "A2_R_ENT", "type": "reflection", "text": "Protecting your time is vital, but ensure your boundaries don't become barriers.", "next": "BRIDGE2" },
+    { "id": "BRIDGE2", "type": "bridge", "text": "Final scan: The radius of your concern.", "next": "A3_Q1" },
+    { "id": "A3_Q1", "type": "question", "text": "When you imagine today's work 'winning', who is smiling in your head?", "options": [
+        { "text": "Me—I feel competent and secure.", "target": "A3_R_SELF", "signal": "axis3:self" },
+        { "text": "My team—we achieved something together.", "target": "A3_R_ALT", "signal": "axis3:altro" },
+        { "text": "The end-user—their pain point was solved.", "target": "A3_R_ALT", "signal": "axis3:altro" }
+    ]},
+    { "id": "A3_R_SELF", "type": "reflection", "text": "Self-actualization is the base. Transcendence is the peak. Try looking one step outward tomorrow.", "next": "SUMMARY" },
+    { "id": "A3_R_ALT", "type": "reflection", "text": "Altrocentrism detected. You're finding meaning in the success of the collective.", "next": "SUMMARY" },
+    { "id": "SUMMARY", "type": "summary", "text": "CORE SIGNALS:\n- Locus: {axis1_dom}\n- Orientation: {axis2_dom}\n- Radius: {axis3_dom}\n\nSynthesis: You operated as a {persona}.", "next": "END" },
+    { "id": "END", "type": "end", "text": "Data logged. Rest well.", "next": null }
+  ]
+}
