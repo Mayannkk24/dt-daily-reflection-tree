@@ -42,7 +42,8 @@ DailyReflectionTree/
 ├── write-up.md                   # Technical and Psychological rationale
 └── README.md                     # Documentation
 
-4. EXECUTION INSTRUCTIONS
+## **4.  EXECUTION INSTRUCTIONS**
+-----------------------------------------4. EXECUTION INSTRUCTIONS
 This agent was developed to be lightweight and portable. It requires no external libraries.
 
 PREREQUISITES
@@ -66,4 +67,3 @@ GUARDRAILS AGAINST HALLUCINATION: By encoding the intelligence into a static JSO
 
 STRATEGIC DISAGREEMENT: The AI originally suggested allowing free-text input for a better "user experience." I REJECTED this to maintain the deterministic requirement, as free-text requires LLM classification which introduces ambiguity and error.
 
-6. DEVELOPED BY
