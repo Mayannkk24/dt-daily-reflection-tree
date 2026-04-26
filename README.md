@@ -29,6 +29,7 @@ The tree is architected to move the employee through three specific spectrums in
 
 ## **3. FOLDER STRUCTURE**
 -----------------------------------------
+
 ```text
 DailyReflectionTree/
 ├── tree/
@@ -42,8 +43,7 @@ DailyReflectionTree/
 ├── write-up.md                   # Technical and Psychological rationale
 └── README.md                     # Documentation
 
-## **4.  EXECUTION INSTRUCTIONS**
------------------------------------------4. EXECUTION INSTRUCTIONS
+4. EXECUTION INSTRUCTIONS
 This agent was developed to be lightweight and portable. It requires no external libraries.
 
 PREREQUISITES
@@ -53,17 +53,18 @@ STEPS TO RUN
 Open your terminal.
 
 Navigate to the agent directory:
+
+PowerShell
 cd agent
-
 Execute the runner:
-python main.py
 
+PowerShell
+python main.py
 5. DESIGN & AI COLLABORATION
-In alignment with the assignment guidelines:
+In strict alignment with the assignment guidelines:
 
 AI AS A POWER TOOL: I utilized LLMs (Gemini/ChatGPT) to iterate on the phrasing of "Reflection Nodes" to ensure the tone felt like a "wise colleague" rather than a manager.
 
 GUARDRAILS AGAINST HALLUCINATION: By encoding the intelligence into a static JSON schema, I ensured the product never "hallucinates" or gives inconsistent feedback.
 
 STRATEGIC DISAGREEMENT: The AI originally suggested allowing free-text input for a better "user experience." I REJECTED this to maintain the deterministic requirement, as free-text requires LLM classification which introduces ambiguity and error.
-
